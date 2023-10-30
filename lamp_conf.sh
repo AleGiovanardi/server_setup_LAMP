@@ -1,6 +1,6 @@
 # allocate 4 gigabytes of swap memory
 fallocate -l 4G /swapfile
-chmod /swapfile
+chmod 0600 /swapfile
 mkswap /swapfile
 swapon /swapfile
 # make swap permanent
